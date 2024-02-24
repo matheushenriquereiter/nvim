@@ -65,7 +65,7 @@ require("lazy").setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { "folke/which-key.nvim", opts = {} },
+  { "folke/which-key.nvim",  opts = {} },
 
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
@@ -213,7 +213,9 @@ require("lazy").setup({
   -- File explorer
   {
     "stevearc/oil.nvim",
-    opts = {},
+    opts = {
+      show_hidden = true,
+    },
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
